@@ -3,6 +3,8 @@
 CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "mpicker.exe.manifest"
 
 IDR_MENUBAR MENU
+// Created 2022 - Baltazarus
+
 BEGIN
     POPUP "&File"
     BEGIN

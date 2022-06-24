@@ -1,3 +1,5 @@
+// Created 2022 - Baltazarus
+
 #include <Windows.h>
 #include <CommCtrl.h>
 #include <ctime>
@@ -247,7 +249,7 @@ void InitUI(HWND w_Handle, HINSTANCE w_Inst)
 
     w_ListBoxMain = CreateWindowW(
         WC_LISTBOXW, nullptr,
-        defStyles | WS_BORDER,
+        defStyles | WS_BORDER | WS_VSCROLL,
         0, 0, 0, 0,
         w_Handle, nullptr, w_Inst, nullptr
     );

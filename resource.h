@@ -1,3 +1,5 @@
+// Created 2022 - Baltazarus
+
 #define IDC_BUTTON_INSERT 21001
 #define IDC_BUTTON_DELETE 21002
 #define IDC_BUTTON_SELECT 21003
