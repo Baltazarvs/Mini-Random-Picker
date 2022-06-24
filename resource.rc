@@ -1,0 +1,27 @@
+#include "resource.h"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "mpicker.exe.manifest"
+
+IDR_MENUBAR MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Import", ID_FILE_IMPORT
+        MENUITEM "&Export", ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit", ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About", ID_HELP_ABOUT
+    END
+END
+
+IDD_ABOUT DIALOG DISCARDABLE 20, 20, 200, 70
+CAPTION "About"
+STYLE 0x80L | 0x00080000L | 0x00C00000L | 0x80000000L
+FONT 10, "Arial"
+BEGIN
+	DEFPUSHBUTTON "&OK", 1, 80, 40, 40, 20
+	CTEXT "Created 2022 - Baltazarus\nUse this program to pick a random item from a list.", IDC_STATIC_ABOUT, 10, 10, 190, 18
+END
