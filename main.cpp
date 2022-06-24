@@ -85,6 +85,9 @@ LRESULT __stdcall WndProc(HWND w_Handle, UINT Msg, WPARAM wParam, LPARAM lParam)
                         MessageBoxW(w_Handle, L"Nothing to select.", L"Select", MB_OK);
                     break;
                 }
+                case ID_FILE_CLEAR:
+                    SendMessageW(w_ListBoxMain, LB_RESETCONTENT, 0u, 0u);
+                    break;
                 case ID_FILE_EXIT:
                     DestroyWindow(w_Handle);
                     break;
