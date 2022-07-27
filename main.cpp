@@ -87,6 +87,7 @@ LRESULT __stdcall WndProc(HWND w_Handle, UINT Msg, WPARAM wParam, LPARAM lParam)
                 }
                 case ID_FILE_CLEAR:
                     SendMessageW(w_ListBoxMain, LB_RESETCONTENT, 0u, 0u);
+		    SendMessageW(w_StatusBar, SB_SETTEXTW, 0u, reinterpret_cast<LPARAM>(L"Items: 0"));
                     break;
                 case ID_FILE_EXIT:
                     DestroyWindow(w_Handle);
